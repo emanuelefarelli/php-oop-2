@@ -1,3 +1,14 @@
+<?php
+
+include_once __DIR__ . '/classes/category.php';
+include_once __DIR__ . '/classes/product.php';
+include_once __DIR__ . '/init.php';
+include_once __DIR__ . '/classes/food.php';
+include_once __DIR__ . '/classes/toys.php';
+include_once __DIR__ . '/classes/houses.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +18,16 @@
     <title>oop-shop</title>
 </head>
 <body>
-    <h1>
-        CIAONE
-    </h1>
+    <p>
+        <?php
+            echo var_dump($sportToy);
+        ?>
+    </p>
+
+    <p>
+        <?php
+            echo var_dump($fakeMouse);
+        ?>
+    </p>
 </body>
 </html>

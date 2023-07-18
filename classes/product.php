@@ -1,5 +1,7 @@
 <?php
 
+include_once __DIR__ . '/category.php';
+
 class product{
     public $title;
     public $description;
@@ -7,7 +9,7 @@ class product{
     public $avaiable;
     public $price;
 
-    function __construct(String $title,String $description,Class $category,Boolean $avaiable,float $price){
+    function __construct(String $title,String $description,Category $category,bool $avaiable,float $price){
         $this->title = $title;
         $this->description = $description;
         $this->category = $category;
@@ -16,7 +18,7 @@ class product{
     }
 
     function getInfo(){
-        return $title, $description, $category, $avaiable;
+        return ($title . $description . $category . $avaiable);
     }
 
 }
